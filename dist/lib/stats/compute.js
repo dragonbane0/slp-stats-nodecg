@@ -97,7 +97,7 @@ function generateGameInfo(games) {
         // console.log(player);
         var characterName = player.characterId !== null ? slippi_js_1.characters.getCharacterName(player.characterId) : "Player ".concat(player.port);
         var characterColor = player.characterId !== null && player.characterColor !== null
-            ? slippi_js_1.characters.getCharacterColorName(player.characterId, player.characterColor)
+            ? player.characterColor
             : "Default";
         return {
             port: player.port,

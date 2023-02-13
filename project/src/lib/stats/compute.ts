@@ -104,7 +104,7 @@ function generateGameInfo(games: GameDetails[]) {
       player.characterId !== null ? characterUtil.getCharacterName(player.characterId) : `Player ${player.port}`;
     const characterColor =
       player.characterId !== null && player.characterColor !== null
-        ? characterUtil.getCharacterColorName(player.characterId, player.characterColor)
+        ? player.characterColor
         : "Default";
 
     return {
